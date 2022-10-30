@@ -1,0 +1,12 @@
+Port 5000 doesnt work in Linux, but it works in Powershell
+Port 5001 seems to work in both linux and Powershell
+
+For Linux
+"script": {
+"start" :"PORT=5001 nodemon index.js"
+}
+
+For powershell
+"script": {
+"start" :"SET PORT=5001 && nodemon index.js"
+}
